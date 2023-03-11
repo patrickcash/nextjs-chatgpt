@@ -1,3 +1,9 @@
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
 .main,
 .main input {
   font-size: 16px;
@@ -8,6 +14,14 @@
 
 .main {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 60px;
+}
+
+.main .form {
+  display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   padding-top: 60px;
@@ -31,7 +45,8 @@
   width: 320px;
 }
 
-.main input[type="text"] {
+.main input,
+.main select {
   padding: 12px 16px;
   border: 1px solid #10a37f;
   border-radius: 4px;
@@ -47,7 +62,7 @@
 .main input[type="submit"] {
   padding: 12px 0;
   color: #fff;
-  background-color: #10a37f;
+  background-color: blue;
   border: none;
   border-radius: 4px;
   text-align: center;
@@ -55,6 +70,13 @@
 }
 
 .main .result {
-  font-weight: bold;
-  margin-top: 40px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main .result_text {
+  display: flex;
+  justify-content: center;
 }
